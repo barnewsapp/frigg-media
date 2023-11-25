@@ -1491,7 +1491,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #010351;
+  background: #1a1c33;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -1503,11 +1503,10 @@ section {
 
 #footer .footer-top .footer-info {
   margin-bottom: 15px;
-  background: #010246;
+  background: #1a1c33;
   color: #fff;
-  border-top: 4px solid #1acc8d;
   text-align: center;
-  padding: 30px 20px;
+  padding: 0px 20px;
 }
 
 #footer .footer-top .footer-info h3 {
@@ -1581,14 +1580,14 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #fff;
+  color: #d9d9d8;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #4be8b0;
+  color: #46e9b0;
 }
 
 #footer .footer-top .footer-newsletter form {

@@ -38,15 +38,6 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", sans-serif;
-}
-
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -718,6 +709,44 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
+.intro-box {
+  display: flex;
+  /* border: 2px solid blue; */
+  margin-top: 96px;
+}
+
+.intro {
+  /* border: 2px solid blue; */
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+.intro-title {
+  color: var(--gray-3);
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.intro-subtitle {
+  color: var(--black);
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.intro-content {
+  color: var(--black);
+  line-height: 1.5;
+}
+
+.intro-logo {
+  /* border: 2px solid red; */
+  height: 400px;
+  padding: 0 64px;
+}
 .about {
   padding: 40px 0 0 0;
 }
@@ -779,12 +808,6 @@ section {
   margin-left: 85px;
   line-height: 24px;
   font-size: 14px;
-}
-
-.about .video-box {
-  background: url("../img/about.png") center center no-repeat;
-  background-size: contain;
-  min-height: 300px;
 }
 
 .about .play-btn {

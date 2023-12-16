@@ -416,7 +416,7 @@ a:hover {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 32px 0;
   overflow: hidden;
 }
 
@@ -726,16 +726,32 @@ section {
 # Bladkiosk
 --------------------------------------------------------------*/
 
-.bladkiosk .content .title {
+/*--------------------------------------------------------------
+# Shared
+--------------------------------------------------------------*/
+
+.title {
   font-weight: 600;
   font-size: 48px;
   color: var(--black);
 }
 
-.bladkiosk .content .subtitle {
+.subtitle {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 24px;
   color: var(--gray-3);
+}
+
+.content {
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--black);
+}
+
+.image {
+  height: 80%; /* Set the initial height to 80% of the viewport height */
+  max-height: 100%; /* Set the maximum height to 100% of the viewport height */
+  width: auto; /* Allow the width to adjust proportionally */
 }
 
 /*--------------------------------------------------------------

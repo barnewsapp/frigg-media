@@ -17,8 +17,8 @@
     />
 
     <!-- Favicons -->
-    <link href="/assets/logo-KOKAYCBo.svg" rel="icon" />
-    <link href="/assets/apple-touch-icon-dxFxdeR4.png" rel="apple-touch-icon" />
+    <link href="assets/img/logo.svg" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
     <link
@@ -27,8 +27,16 @@
     />
 
     <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
     <!-- Template Main CSS File -->
+    <link href="sass/main.scss" rel="stylesheet" />
 
     <!-- =======================================================
   * Template Name: Bootslander
@@ -37,7 +45,6 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-    <link rel="stylesheet" crossorigin href="/assets/index-kYWP6Vxx.css">
   </head>
 
   <body>
@@ -47,7 +54,7 @@
         <div class="logo">
           <h1>
             <a href="index.html"
-              ><img src="data:image/png;base64,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" alt="" class="img-fluid"
+              ><img src="./assets/img/log-text.png" alt="" class="img-fluid"
             /></a>
           </h1>
           <!-- Uncomment below if you prefer to use an image logo -->
@@ -90,7 +97,7 @@
             </div>
 
             <div class="col-md-5" data-aos="fade-right">
-              <img src="/assets/logo-KOKAYCBo.svg" class="image img-fluid" alt="" />
+              <img src="assets/img/logo.svg" class="image img-fluid" alt="" />
             </div>
           </div>
         </div>
@@ -102,7 +109,7 @@
         <div class="container">
           <div class="row d-flex justify-content-between">
             <div class="col-md-5" data-aos="fade-right">
-              <img src="/assets/image 6-N6-cd2ky.png" class="image img-fluid" alt="" />
+              <img src="assets/img/image 6.png" class="image img-fluid" alt="" />
             </div>
             <div class="col-md-5 pt-4 mx-2 mt-5" data-aos="fade-up">
               <h3 class="subtitle">Din digitale</h3>
@@ -143,7 +150,7 @@
             </div>
 
             <div class="col-md-6 d-flex justify-content-center" data-aos="fade-right">
-              <img src="/assets/sok-i-arkiv-Hpm1z8Sy.png" class="img-fluid image" alt="" />
+              <img src="assets/img/sok-i-arkiv.png" class="img-fluid image" alt="" />
             </div>
           </div>
         </div>
@@ -155,7 +162,7 @@
         <div class="container">
           <div class="row content d-flex justify-content-between">
             <div class="col-md-6 d-flex justify-content-center" data-aos="fade-right">
-              <img src="/assets/bedriftslosninger-6AFT5JrB.png" class="img-fluid image" alt="" />
+              <img src="assets/img/bedriftslosninger.png" class="img-fluid image" alt="" />
             </div>
             <div class="col-md-5 pt-4" data-aos="fade-up">
               <h3 class="title">Bedriftsløsninger</h3>
@@ -192,7 +199,7 @@
               class="card col-md-4 p-3 border-0 my-24"
               style="height: auto; width: 350px; background-color: white; border-radius: 10px"
             >
-              <img src="/assets/earkiv-4wNG2Pc8.png" class="card-img-top w-50" alt="Your Image" />
+              <img src="assets/img/earkiv.png" class="card-img-top w-50" alt="Your Image" />
               <div class="card-body">
                 <h5 class="card-title">EArkiv</h5>
                 <h6 class="card-subtitle mb-2 text-muted">
@@ -208,7 +215,7 @@
               class="card col-md-4 p-3 border-0 my-24"
               style="height: auto; width: 350px; background-color: white; border-radius: 10px"
             >
-              <img src="/assets/eleser-cJvW-e_s.png" class="card-img-top w-50" alt="Your Image" />
+              <img src="assets/img/eleser.png" class="card-img-top w-50" alt="Your Image" />
               <div class="card-body">
                 <h5 class="card-title">ELeser</h5>
                 <h6 class="card-subtitle mb-2 text-muted">
@@ -224,7 +231,7 @@
               class="card col-md-4 p-3 border-0 my-24"
               style="height: auto; width: 350px; background-color: white; border-radius: 10px"
             >
-              <img src="/assets/nyhetsapp-12DrEKAD.png" class="card-img-top w-75" alt="Your Image" />
+              <img src="assets/img/nyhetsapp.png" class="card-img-top w-75" alt="Your Image" />
               <div class="card-body">
                 <h5 class="card-title">NyhetsApp</h5>
                 <h6 class="card-subtitle mb-2 text-muted">

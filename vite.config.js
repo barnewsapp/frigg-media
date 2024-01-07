@@ -1,6 +1,8 @@
 export default {
-  root: './docs',
   server: {
     port: 8080,
+  },
+  build: {
+    outDir: 'docs',
   },
 };

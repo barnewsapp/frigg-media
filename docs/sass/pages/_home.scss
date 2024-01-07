@@ -1,0 +1,76 @@
+/*--------------------------------------------------------------
+# Disable AOS delay on mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Intro
+--------------------------------------------------------------*/
+
+.intro-box {
+  display: flex;
+  margin-top: 96px;
+}
+
+/*--------------------------------------------------------------
+# Produkter
+--------------------------------------------------------------*/
+
+.produkter h1.title {
+  color: var(--black);
+  font-size: 48px;
+  padding: 8px;
+}
+
+/*--------------------------------------------------------------
+# Shared
+--------------------------------------------------------------*/
+
+.title {
+  font-size: 48px;
+  color: var(--black);
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--gray-3);
+}
+
+.card-title {
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--black);
+}
+
+.card-subtitle {
+  font-weight: 300;
+
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.content {
+  font-weight: 300;
+  font-size: 20px;
+  color: var(--black);
+  line-height: 1.5;
+}
+
+.image {
+  height: 80%; /* Set the initial height to 80% of the viewport height */
+  max-height: 100%; /* Set the maximum height to 100% of the viewport height */
+  width: auto; /* Allow the width to adjust proportionally */
+}
+
+/*--------------------------------------------------------------
+# Custom Spacing
+--------------------------------------------------------------*/
+
+.my-24 {
+  margin: 24px 0;
+}
